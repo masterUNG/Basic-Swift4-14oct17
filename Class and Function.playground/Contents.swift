@@ -20,6 +20,20 @@ class MyClass {
         
     }
     
+    //Function Type Return
+    func functionTypeReturn() -> Int {
+        return 100
+    }
+    
+    
+    //Function Type Return Add Argument
+    func calculateArea(base: Int, height: Int) -> Double {
+        let baseDou = Double(base)
+        let heightDou = Double(height)
+        let result = 0.5 * baseDou * heightDou
+        
+       return result
+    }
     
     
     
@@ -42,6 +56,14 @@ objectMyClass.functionTypeVoid()
 
 //Call functionTypoVoid add Argument
 objectMyClass.functionVoidTypeAddArgument(surname: "Phrombutr")
+
+//Call Functon Type Return
+var answerInt: Int = objectMyClass.myNumberInt + objectMyClass.functionTypeReturn()
+print("answerInt ==> \(answerInt)")
+
+//Call Function Type Return add Argument
+let areaDou: Double = objectMyClass.calculateArea(base: 50, height: 11)
+print("พื่นที่สามเหลี่ยมที่ได้ ==> \(areaDou) ตารางเมตร")
 
 
 
